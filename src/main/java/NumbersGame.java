@@ -17,7 +17,7 @@ public class NumbersGame {
         String levelExplanations[] = {
                 "Easy: You will win if your number is higher or the same than mine.",
                 "Medium: You will win if your number is higher than mine.",
-                "Hard : You will win only win if your number is the same as mine.",
+                "Hard : You will only win if your number is the same as mine.",
                 "Exit : Gone so soon?",
         };
 
@@ -29,11 +29,11 @@ public class NumbersGame {
             System.out.println("You selected: " + levelExplanations[decisionDifficulty - 1]);
             switch (decisionDifficulty) {
                 case 1:
-                    System.out.println("Easy game initializing. . .");
+                    System.out.println("Easy game initializing. . . You can choose your own range of numbers!");
 
                     int easyGameFinalNum = getUserRangeReturnNum();
 
-                    System.out.println("What do you think the magic number is?");
+                    System.out.println("What will your number be?");
 
                     int easyUserFinalNum = getUserInput();
 
@@ -47,11 +47,11 @@ public class NumbersGame {
 
                     break;
                 case 2:
-                    System.out.println("Medium game initializing. . .");
+                    System.out.println("Medium game initializing. . . You can choose your own range of numbers!");
 
                     int mediumGameFinalNum = getUserRangeReturnNum();
 
-                    System.out.println("What do you think the magic number is?");
+                    System.out.println("What will your number be?");
 
                     int mediumUserFinalNum = getUserInput();
 
@@ -65,11 +65,11 @@ public class NumbersGame {
 
                     break;
                 case 3:
-                    System.out.println("Hard game initializing. . .");
+                    System.out.println("Hard game initializing. . . You can choose your own range of numbers!");
 
                     int hardGameFinalNum = getUserRangeReturnNum();
 
-                    System.out.println("What do you think the magic number is?");
+                    System.out.println("What will your number be?");
 
                     int hardUserFinalNum = getUserInput();
 
